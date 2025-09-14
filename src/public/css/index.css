@@ -1,0 +1,26 @@
+.page__content {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.page__heading {
+    justify-content: space-between;
+    display: flex;
+}
+
+.register__button .register__button-submit {
+    padding: 10px;
+        width: 15%;
+        height: 40px;
+        border: none;
+        background: #8B7969;
+        color: #fff;
+        cursor: pointer;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    height: 100%;
+}
