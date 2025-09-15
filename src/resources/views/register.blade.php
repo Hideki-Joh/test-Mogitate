@@ -26,7 +26,7 @@
         </div>
         <div class="form__error">
           @error('name')
-          {{ $message }}
+            {{ $message }}
           @enderror
         </div>
       </div>
@@ -44,7 +44,7 @@
         </div>
         <div class="form__error">
           @error('price')
-          {{ $message }}
+            {{ $message }}
           @enderror
         </div>
       </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="form__error">
           @error('image')
-          {{ $message }}
+            {{ $message }}
           @enderror
         </div>
       </div>
@@ -77,13 +77,13 @@
       </div>
       <div class="form__group-content">
         <div class="form__input--radio--seasons">
-          <label><input type="checkbox" name="seasons1" value=1 />春</label>
-          <label><input type="checkbox" name="seasons2" value=2 />夏</label>
-          <label><input type="checkbox" name="seasons3" value=3 />秋</label>
-          <label><input type="checkbox" name="seasons4" value=4 />冬</label>
+          <label><input type="checkbox" name="season_id[]" value=1 />春</label>
+          <label><input type="checkbox" name="season_id[]" value=2 />夏</label>
+          <label><input type="checkbox" name="season_id[]" value=3 />秋</label>
+          <label><input type="checkbox" name="season_id[]" value=4 />冬</label>
         </div>
         <div class="form__error">
-          @error('seasons')
+          @error('season_id')
             {{ $message }}
           @enderror
         </div>
@@ -98,10 +98,10 @@
       </div>
       <div class="form__group-content">
         <div class="form__input--textarea">
-          <textarea name="detail" placeholder="商品の説明を入力"></textarea>
+          <textarea name="description" placeholder="商品の説明を入力"></textarea>
         </div>
         <div class="form__error">
-          @error('detail')
+          @error('description')
             {{ $message }}
           @enderror
         </div>

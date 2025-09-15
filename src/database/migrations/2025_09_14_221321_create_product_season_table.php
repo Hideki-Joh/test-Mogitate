@@ -15,8 +15,8 @@ class CreateProductSeasonTable extends Migration
     {
         Schema::create('product_season', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('product_id')->constrained();
-            $table->foreignId('season_id')->constrained();
+            $table->foreignId('product_id')->constrained()->cascadeOnDelete();
+            $table->foreign('season_id')->references('id')->on('seasons')->onDelete('cascade');
             $table->timestamps();
         });
     }
