@@ -18,7 +18,7 @@ class Product extends Model
             'updated_at'
           ];
           
-        public function season() {
+        public function Seasons() {
             return $this->belongsToMany(Season::class);
         }
 }

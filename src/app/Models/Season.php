@@ -9,7 +9,7 @@ class Season extends Model
 {
     use HasFactory;
 
-        public function product_season() {
-            return $this->belongsToMany(product_season::class)->withPivot('product_season');
+        public function Products() {
+            return $this->belongsToMany(Product::class)->withPivot('product');
         }
 }
