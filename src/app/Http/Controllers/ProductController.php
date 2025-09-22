@@ -4,13 +4,16 @@ namespace App\Http\Controllers;
 
 //use Illuminate\Http\Request;
 use App\Http\Requests\ProductRequest;
+use App\Http\Models\Product;
+use App\Http\Models\Season;
 
 class ProductController extends Controller
 {
-    public function index(Request $request)
+    //public function index(ProductRequest $request)
+    public function index()
     {
-        $items = Product::all();
-        $items = Season::with('season')->get();
+        //$items = Product::all();
+        //$items = Season::with('season')->get();
         return view('index');
     }
 
